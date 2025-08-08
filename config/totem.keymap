@@ -27,7 +27,7 @@
         };
 
         combo_del {
-            bindings = <&kp DELETE>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
         };
 
@@ -42,10 +42,10 @@
 
         Windows {
             bindings = <
-           &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P
-           &kp A  &kp S  &kp D      &kp F  &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LCTRL  &mo 1  &kp SPACE    &kp ENTER  &kp BACKSPACE  &mo_num
+           &kp Q  &kp W  &kp E    &kp R    &kp T        &kp Y  &kp U          &kp I      &kp O    &kp P
+           &kp A  &kp S  &kp D    &kp F    &kp G        &kp H  &kp J          &kp K      &kp L    &kp SEMI
+&kp LSHFT  &kp Z  &kp X  &kp C    &kp V    &kp B        &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &mo_num  &mo_num  &kp SPACE    &mo 1  &kp BACKSPACE  &mo_num
             >;
         };
 
@@ -62,17 +62,8 @@
             bindings = <
             &bt BT_CLR_ALL  &bt BT_CLR  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3    &kp KP_PLUS    &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_DOT
             &kp A           &kp S       &kp D            &kp F         &kp G           &kp KP_MINUS   &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_ASTERISK
-&kp LSHIFT  &to 0           &to 3       &kp KP_NUMLOCK   &kp V         &kp B           &kp KP_DIVIDE  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp PERCENT      &kp RIGHT_SHIFT
+&kp LSHIFT  &none           &none       &kp KP_NUMLOCK   &kp V         &kp B           &kp KP_DIVIDE  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp PERCENT      &kp RIGHT_SHIFT
                                         &kp KP_NUMBER_0  &kp KP_N0     &kp KP_N0       &kp KP_N0      &kp BACKSPACE    &kp KP_N0
-            >;
-        };
-
-        Mac_Mode {
-            bindings = <
-           &kp Q  &kp W  &kp E     &kp R    &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P
-           &kp A  &kp S  &kp D     &kp F    &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V    &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LGUI  &mo NAV  &kp SPACE    &kp ENTER  &kp BACKSPACE  &mo_num
             >;
         };
     };
