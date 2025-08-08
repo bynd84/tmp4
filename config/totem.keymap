@@ -36,6 +36,11 @@
             bindings = <&kp ENTER>;
             key-positions = <16 17 18>;
         };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
     };
 
     keymap {
