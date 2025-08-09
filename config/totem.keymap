@@ -10,6 +10,8 @@
 
 &mt {
   tapping-term-ms = <400>;
+  global-quick-tap;
+  flavor = "tap-preferred";
   quick-tap-ms = <120>;
 };
 
