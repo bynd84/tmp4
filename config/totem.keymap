@@ -8,6 +8,10 @@
 #define SYM  2
 #define MAC  3
 
+&mt {
+  tapping-term-ms = <400>;
+};
+
 / {
     behaviors {
         mo_num: mo_num {
