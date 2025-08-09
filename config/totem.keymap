@@ -10,7 +10,6 @@
 
 &mt {
   tapping-term-ms = <400>;
-  hold-trigger-on-other-key-press = <false>;
   quick-tap-ms = <120>;
 };
 
