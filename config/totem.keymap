@@ -77,10 +77,10 @@
 
         Num_Sym {
             bindings = <
-            &bt BT_CLR_ALL  &bt BT_CLR  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3    &kp KP_PLUS    &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_DOT
-            &kp A           &kp S       &kp D            &kp F         &kp G           &kp KP_MINUS   &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_ASTERISK
-&kp LSHIFT  &none           &none       &kp KP_NUMLOCK   &kp V         &kp B           &kp KP_DIVIDE  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp PERCENT      &kp RIGHT_SHIFT
-                                        &kp KP_NUMBER_0  &kp KP_N0     &kp KP_N0       &kp BACKSPACE  &kp KP_N0        &kp KP_N0
+            &trans          &trans  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3    &kp KP_PLUS    &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_DOT
+            &kp A           &kp S   &kp D            &kp F         &kp G           &kp KP_MINUS   &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_ASTERISK
+&kp LSHIFT  &bt BT_CLR_ALL  &none   &kp KP_NUMLOCK   &kp V         &kp B           &kp KP_DIVIDE  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp PERCENT      &kp RIGHT_SHIFT
+                                    &kp KP_NUMBER_0  &kp KP_N0     &kp KP_N0       &kp BACKSPACE  &kp KP_N0        &kp KP_N0
             >;
         };
     };
