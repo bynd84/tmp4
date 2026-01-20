@@ -62,7 +62,7 @@
            &kp Q  &kp W        &kp E           &kp R           &kp T        &kp Y          &kp U           &kp I           &kp O        &kp P
            &kp A  &mt LCTRL S  &mt LEFT_GUI D  &mt LEFT_ALT F  &kp G        &kp H          &mt LEFT_ALT J  &mt LEFT_GUI K  &mt LCTRL L  &kp SEMI
 &kp LSHFT  &kp Z  &kp X        &kp C           &kp V           &kp B        &kp N          &kp M           &kp COMMA       &kp DOT      &kp FSLH  &kp RSHFT
-                               &mo_num         &mo 1           &kp SPACE    &kp BACKSPACE  &mo 1           &mo_num
+                               &mo 3           &mo 1           &kp SPACE    &kp BACKSPACE  &mo 1           &mo_num
             >;
         };
 
@@ -77,10 +77,19 @@
 
         Num_Sym {
             bindings = <
-            &kp LC(LA(DELETE))  &kp LA(LC(ESCAPE))  &bt BT_SEL 1              &bt BT_SEL 2    &bt BT_SEL 3    &kp KP_PLUS    &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_DOT
-            &kp A               &kp LG(LS(S))       &kp LG(LC(LS(NUMBER_4)))  &kp LG(LC(N5))  &kp G           &kp KP_MINUS   &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_ASTERISK
-&kp LSHIFT  &bt BT_CLR_ALL      &none               &kp KP_NUMLOCK            &kp V           &kp B           &kp KP_DIVIDE  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp PERCENT      &kp RIGHT_SHIFT
-                                                    &kp KP_NUMBER_0           &kp KP_N0       &kp KP_N0       &kp BACKSPACE  &kp KP_N0        &kp KP_N0
+            &trans  &trans  &trans           &trans     &trans       &kp KP_PLUS    &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_DOT
+            &trans  &trans  &trans           &trans     &trans       &kp KP_MINUS   &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_ASTERISK
+&kp LSHIFT  &trans  &trans  &trans           &trans     &trans       &kp KP_DIVIDE  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp PERCENT      &kp RIGHT_SHIFT
+                            &kp KP_NUMBER_0  &kp KP_N0  &kp KP_N0    &kp BACKSPACE  &kp KP_N0        &kp KP_N0
+            >;
+        };
+
+        Control {
+            bindings = <
+        &bt BT_CLR_ALL  &trans         &bt BT_SEL 0              &bt BT_SEL 1              &bt BT_SEL 2    &trans           &trans             &trans           &trans                &trans
+        &trans          &kp LG(LS(S))  &kp LG(LC(LS(NUMBER_4)))  &kp LG(LS(LC(NUMBER_5)))  &trans          &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+&trans  &trans          &trans         &trans                    &trans                    &trans          &kp LC(LA(DEL))  &trans             &trans           &trans                &trans                &trans
+                                       &trans                    &trans                    &trans          &trans           &trans             &trans
             >;
         };
     };
