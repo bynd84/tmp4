@@ -86,10 +86,10 @@
 
         Control {
             bindings = <
-        &bt BT_CLR_ALL  &trans         &bt BT_SEL 0              &bt BT_SEL 1              &bt BT_SEL 2    &trans           &trans             &trans           &trans                &trans
-        &trans          &kp LG(LS(S))  &kp LG(LC(LS(NUMBER_4)))  &kp LG(LS(LC(NUMBER_5)))  &trans          &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
-&trans  &trans          &trans         &trans                    &trans                    &trans          &kp LC(LA(DEL))  &trans             &trans           &trans                &trans                &trans
-                                       &trans                    &trans                    &trans          &trans           &trans             &trans
+        &bt BT_CLR_ALL  &trans         &bt BT_SEL 0              &bt BT_SEL 1              &bt BT_SEL 2    &trans           &trans  &trans  &trans  &trans
+        &trans          &kp LG(LS(S))  &kp LG(LC(LS(NUMBER_4)))  &kp LG(LS(LC(NUMBER_5)))  &trans          &trans           &trans  &trans  &trans  &trans
+&trans  &trans          &trans         &trans                    &trans                    &trans          &kp LC(LA(DEL))  &trans  &trans  &trans  &trans  &trans
+                                       &trans                    &trans                    &trans          &trans           &trans  &trans
             >;
         };
     };
