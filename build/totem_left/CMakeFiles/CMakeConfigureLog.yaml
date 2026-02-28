@@ -1,0 +1,101 @@
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/work/zephyr/cmake/modules/FindZephyr-sdk.cmake:57 (find_package)"
+      - "/work/zephyr/cmake/modules/FindHostTools.cmake:53 (find_package)"
+      - "/work/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/work/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/work/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/work/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    name: "Zephyr-sdk"
+    configs:
+      -
+        filename: "Zephyr-sdkConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyr-sdk-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "0.16"
+      version_complete: "0.16"
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      hints:
+        - "/opt/zephyr-sdk-0.16.9"
+      names:
+        - "Zephyr-sdk"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/opt/zephyr-sdk-0.16.9/cmake/Zephyr-sdkConfig.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/opt/zephyr-sdk-0.16.9/cmake/zephyr-sdk-config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/work/build/totem_left/CMakeFiles/pkgRedirects/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/work/build/totem_left/CMakeFiles/pkgRedirects/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/zephyr-sdk-0.16.3/cmake/Zephyr-sdkConfig.cmake"
+      mode: "config"
+      version: "0.16.3"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+...
